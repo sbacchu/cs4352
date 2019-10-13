@@ -1,3 +1,5 @@
+#!/bin/bash
+
 make chainproc
 make multichild
 echo "Compilation Completed"
