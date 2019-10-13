@@ -18,6 +18,12 @@ then
     msg="Good Evening $LOGNAME"
 fi
 
+if [ $temph -gt 20 -a $temph -le 24 ]
+then
+    msg="Good Night $LOGNAME"
+fi
+
 #echo $temph
 #echo $dat
-echo -e "$msg\nThis is $dat"
+echo -e "$msg\nThis is $dat" > greetingmsg.txt
+
