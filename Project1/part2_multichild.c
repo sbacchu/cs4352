@@ -1,15 +1,16 @@
 #include <stdio.h>
+#include <stdlib.h>
 
-int main()
+int main(int argc, char *argv[])
 {
-    for (int i = 0; i < 5; i++) // loop will run n times (n=5)
-    {
-        if (fork() == 0)
-        {
-            printf("[son] pid %d from [parent] pid %d\n", getpid(), getppid());
+    int pro = atoi(argv[1]);
+    int i;
+    for ( i = 0; i < pro; i++){
+        if (fork() == 0){
+            printf("Hello from [child] pid %d from [parent] pid %d\n", getpid(), getppid());
             exit(0);
         }
     }
-    for (int i = 0; i < 5; i++) // loop will run n times (n=5)
+    for ( i = 0; i < pro; i++)
         wait(NULL);
 }
