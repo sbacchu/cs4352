@@ -1,7 +1,6 @@
 #!/bin/bash
 
-make chainproc
-make multichild
+make part2
 echo "Compilation Completed"
 echo "."
 echo "."

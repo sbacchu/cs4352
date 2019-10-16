@@ -1,5 +1,3 @@
-#include <stdio.h>
-#include <stdlib.h>
 
 void createChild(int i)
 {
